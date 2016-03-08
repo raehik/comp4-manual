@@ -1,0 +1,77 @@
+\section{Introduction \& features}
+
+\todo{Is this actually detailed desc. of full sys?}
+
+\textbf{Organisr} is a digital calendar and to-do list application which makes
+tracking your appointments and daily tasks much easier. The rationale behind
+Organisr is to \textit{improve and streamline} the most common organisation and
+time management systems by providing a digital substitute. To this end, we
+included:
+
+\begin{itemize}
+    \item a simple and easy-to-use 'to-do' list system
+    \item a flexible calendar on which users can set appointments and events for
+        specified days
+    \item desktop notifications for appointments
+    \item physical printouts of daily, weekly and monthly calendar views,
+        showing any appointments on those days
+\end{itemize}
+
+Using calendars is a widespread practice, as it provides an effective way of
+managing projects and events, and lets you drop certain things from your memory
+so that you can concentrate on the present. An example: say you need to remember
+to buy a present for a friend's birthday in the coming weeks. Holding it in
+your memory for the whole two weeks would ensure that you wouldn't forget --
+however many people prefer to concentrate absolutely on one task at a time.
+So you'd note down their birthday on a calendar you check frequently and sort
+it out when you find some spare time.
+
+Organisr improves on the traditional calendar by allowing \textbf{time-based
+notifications} to be set for individual appointments. Using this method, events
+such as meetings and birthdays become a cinch to remember, since you can make a
+notification for whenever you need and rest assured that you'll be reminded on
+time.
+
+For people who prefer to use 'material' time management systems (or if someone
+asks for a copy of your project schedule), Organisr allows you to make
+\textbf{paper printouts} for your to-dos and appointments.
+
+
+\section{Installation}
+
+\subsection{Linux}
+
+\subsubsection{Building from source}
+
+Ensure that the \href{http://srombauts.github.io/SQLiteCpp/}{SQLiteC++} and
+\href{http://sqlite.org/download.html}{SQLite} libraries are installed.
+\verb|libSQLiteCpp| and \verb|libsqlite3| should both in your your library path
+(you may need to copy the compiled SQLiteC++ library file to
+\verb|/usr/local/lib| manually), and all of the SQLiteC++ header files should be
+in your include path. Organisr uses qmake, so best practices suggest making an
+out-of-source build. First, download the source from GitHub using Git or another
+method:
+
+\begin{lstlisting}
+git clone https://github.com/raehik/organisr
+cd organisr
+\end{lstlisting}
+
+Now run qmake, and run \verb|make| on the resulting Makefile:
+
+\begin{lstlisting}
+mkdir build
+qmake ..
+make
+\end{lstlisting}
+
+\begin{verbatim}
+mkdir build
+qmake ..
+make
+\end{verbatim}
+
+
+\subsection{Windows}
+
+Run the provided installer.

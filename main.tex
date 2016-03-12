@@ -7,6 +7,14 @@
 \inputlib{er}
 %% }}}
 
+\usepackage{amsfonts}
+\usepackage{newunicodechar}
+\newunicodechar{✓}{\checkmark}
+
+\usepackage{marginnote}
+
+\newcommand{\tip}[1]{\medskip\noindent\reversemarginpar\marginnote{\textit{\textbf{TIP}}}#1\medskip}
+
 \begin{document}
 
 %% Document & author info {{{
@@ -28,9 +36,11 @@ User manual}
 \clearpage
 %% }}}
 
+\newcommand{\guiel}[1]{\textbf{#1}}
+
 \inputsrc{introduction}
 \clearpage
-\inputsrc{basic-usage}
+\inputsrc{usage}
 \clearpage
 \inputsrc{other-features}
 \clearpage

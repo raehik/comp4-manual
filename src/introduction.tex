@@ -43,8 +43,18 @@ asks for a copy of your project schedule), Organisr allows you to make
 
 \subsubsection{Building from source}
 
-Ensure that the \href{http://srombauts.github.io/SQLiteCpp/}{SQLiteC++} and
-\href{http://sqlite.org/download.html}{SQLite} libraries are installed.
+This section assumes you have basic knowledge of the Linux shell and have
+software building tools installed. If you do not have build tools such as
+\texttt{make} or \texttt{g++}, install relevant packages using your package
+manager. On recent versions of Ubuntu, try running:
+
+\begin{lstlisting}
+sudo apt-get install build-essential g++ sqlite3 libsqlite3-dev qtdeclarative5-dev
+\end{lstlisting}
+
+Ensure that the \href{http://srombauts.github.io/SQLiteCpp/}{SQLiteC++},
+\href{http://sqlite.org/download.html}{SQLite} and
+\href{http://www.qt.io/developers/}{Qt 5} libraries are installed.
 \verb|libSQLiteCpp| and \verb|libsqlite3| should both in your your library path
 (you may need to copy the compiled SQLiteC++ library file to
 \verb|/usr/local/lib| manually), and all of the SQLiteC++ header files should be
@@ -71,4 +81,5 @@ is \verb|organisr|.
 
 \subsection{Windows}
 
-Run the provided installer and follow the steps in the install wizard.
+Run the provided installer and follow the steps in the install wizard. You
+should find a shortcut to Organisr and the user manual in the Start menu.

@@ -145,27 +145,77 @@ details to search all your appointments with. You can search by title,
 description, location, or date.
 
 \begin{itemize}
-    \item TODO
-    \item Explain how fields work
-    \item i.e. first is used for title \& desc.
+    \item The first field labelled "Title/description" takes a search query
+        which it uses to search both the title \textbf{and} the description. If
+        you only remember part of one, type whatever you remember into the
+        field.
+    \item Choose the date range using the provided calendars.
+    \item If you want to search for appointments at a certain place,
+        type it into the "Location" field.
 \end{itemize}
+
+The search looks for the phrase you type in for the text input fields. It tries
+to find the phrase in between other text -- however it won't search each
+individual word you type. It is recommended to only search for a few keywords at
+a time, in case you don't remember exact wording.
 
 
 \subsubsection{View the current month's appointments}
 
-TODO
+\fullimg{06-appt-month}
+
+Click on the \guiel{`View'} toolbar button and click the \guiel{`Appointments
+this month'} entry. A new window should come up with an overview of all your
+appointments for the current month.
+
+You can print the window to a printer or PDF file using the \guiel{`Print'}
+button in the bottom right of the window.
 
 
-\subsection{Troubleshooting errors}
+\subsection{Troubleshooting error messages}
 \subsubsection{Field 'X' is empty}
 
 \halfimg{err-empty}
 
-TODO
+This error box will pop up if a required entry field is left empty when
+adding or updating an appointment or to-do.
+
+\paragraph{Fix}
+Make sure you fill all required fields. The error box will tell you the label of
+the field which needs amending. Required fields are:
+
+\begin{itemize}
+    \item \textbf{Appointment:} Title, date, time (latter two are pre-filled)
+    \item \textbf{To-do:} To-do text (the only entry field available)
+\end{itemize}
+
+
+\subsubsection{'After' date is later than 'before' date}
+
+\fullimg{err-date-bad}
+
+This error box will come up if the 'After date' field is a later day than the
+'Before date' field. This would never show any results, since it's like trying
+to find a number more than 5 but less than 3.
+
+\paragraph{Fix}
+Choose different dates so that the 'after' date is earlier than the 'before'
+date (they can also be both the same day for a search on a single day).
 
 
 \subsubsection{No appointments found for given range and descriptions}
 
 \smallimg{err-no-appts}
 
-TODO
+This error box will show up if there were no appointments found in the range
+given with the description and location given.
+
+\paragraph{Fix}
+If you were expecting to find an appointment in the range you gave with the
+description given, check your inputs. The text fields are case-insensitive, so
+capitalisation doesn't matter, but make sure you didn't misspell anything. Try
+deleting the contents of the description and location fields, and searching just
+using a range.
+
+Alternatively it \textbf{may not be an error}: there may be no appointments
+matching the data you entered.
